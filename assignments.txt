@@ -1,0 +1,31 @@
+MacBook-Air-de-FLAVIO:dojoassignments fmrocha$ ls -R
+CSS		HTML		MEAN		Ruby		iOS
+Git		Javascript	Python		WebFundamentals	netCore
+
+./MEAN:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./WebFundamentals:
+CSS		Git		HTML		Javascript	about.txt
+
+./WebFundamentals/CSS:
+
+./WebFundamentals/Git:
+
+./WebFundamentals/HTML:
+indentation.html
+
+./WebFundamentals/Javascript:
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt
+MacBook-Air-de-FLAVIO:dojoassignments fmrocha$ 

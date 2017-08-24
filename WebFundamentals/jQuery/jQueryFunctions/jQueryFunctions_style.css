@@ -4,7 +4,6 @@
 	font-family: sans-serif;
 }
 #wrapper {
-	/* height: 550px; */
 	width: 460px;
     background: gray;
 	border: 2px solid black;
@@ -12,12 +11,9 @@
 	margin: 0px auto;
 	font-size: 12px;
 }
- /* #addclass {
-	padding: 10px;
-	background-color: whitesmoke;
-}  */
+
 button {
-    color: white;
+    color: gray;
     padding: 5px 22px;
     text-align: center;
     text-decoration: none;

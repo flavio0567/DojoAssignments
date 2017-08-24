@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="jQueryFunctions_style.css" rel="stylesheet">
+  <title>Document</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+          $( "#addclass" ).click(function() {
+              $( "p" ).css( "color", "red" );
+          });
+          
+          $( "#slidetoggle" ).click(function() {
+              $( "#mikey" ).slideToggle( "slow", function() { 
+          });
+          });
+          
+          $( ".append" ).click(function() {
+          $( "#append" ).append( "<strong>Hello</strong>" );
+
+          });
+
+          $( "#slideDown" ).click(function() {
+              $( ".mikey" ).slideDown( "slow", function() { 
+          });
+          });
+
+          $( "#before" ).click(function() {
+              $( ".before" ).before( "<b>Hello</b>" );
+          });
+
+          $( "#fadeout" ).click(function() {
+              $( ".fadeout" ).fadeOut( "slow", function() { 
+          });
+          });
+
+
+        });
+    </script>
+</head>
+<body>
+  <div id="wrapper">
+      <h1>My iQuery basic assignment</h1>
+      <div>
+          <h2>AddClass</h2>
+          <button  id="addclass" type="button">AddClass</button>
+          <p>Click the button to add class 'red' to this paragraph</p>
+      </div>
+      <div>
+          <h2>SlideToggle</h2>
+          <button id="slidetoggle" type="button">Slidetoggle</button>
+          <img hidden id="mikey" src="mikey.png" alt="michelangelo">
+          Click the button to slide toggle a hidden image  
+      </div> 
+      <div id="append">
+          <h2>Append</h2>
+          <button class="append" type="button">Append</button>
+          Click the button to append a new paragraph   
+      </div> 
+      <div id="slideDown">
+          <h2>SlideDown</h2>
+          <button type="button">Slidetoggle</button>
+          <img hidden class="mikey" src="mikey.png" alt="michelangelo">
+          Click the button to slide down a hidden image  
+      </div> 
+      <div id="before">
+          <h2>Before</h2>
+          <button class="before" type="button">Before</button>
+          Click the button to append a new paragraph before   
+      </div>
+      <div>
+          <h2>Fadeout</h2>
+          <button id="fadeout" type="button">Fadeout</button>
+          <img class="fadeout" src="mikey.png" alt="michelangelo">
+          Click the button to fade out the image  
+      </div> 
+
+
+  </div>
+</body>
+</html>

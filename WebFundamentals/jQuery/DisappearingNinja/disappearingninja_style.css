@@ -1,0 +1,28 @@
+* {
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper {
+    width: 370px;
+    background-color: whitesmoke; 
+    margin: 20px auto;
+    padding: 15px;
+    /* text-align: center;    */
+}
+#container{  
+    width: 340px;
+    background-color: 	#ced6a1; 
+     margin: 20px auto;
+    padding: 15px; 
+}
+img {
+    height: 80px;
+    border: 2px solid gray;
+    display: inline-block;
+
+}
+button {
+    color: white;
+    background-color: green;
+
+}

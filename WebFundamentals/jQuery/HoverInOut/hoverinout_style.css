@@ -1,0 +1,35 @@
+* {
+ margin: 0px;
+ padding: 0px;
+}
+.container{
+    margin: 0 auto;
+    width: 780px;
+    background-color:  rgba(2,2,2, .6);
+    height: 520px;
+    border: 10px solid grey;
+    margin-top: 30px;
+    background-size: 970px 520px;
+    
+}
+.select{
+    background-color: #C6C6C6;
+    margin-left: 150px;
+    margin-top: 40px;
+    height: 430px;
+    width: 450px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border: 5px solid grey;
+    border-radius: 5px;
+}
+p{
+    color: #B9A226;
+    font-size: 24px;
+    padding-left: 130px;
+    margin-bottom: 8px;
+}
+img{
+    height: 180px;
+    width: 220px;
+}

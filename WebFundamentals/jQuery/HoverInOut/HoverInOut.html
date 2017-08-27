@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hover In/Out</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="hoverinout_style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img', this ).hover(function(){
+                    var $src = $(this);
+                    var $save = $src.attr('src');
+                    $src.attr('src', $src.attr('rec-src'));               
+                    $src.attr('rec-src', $save);
+                },
+                    function(){
+                        var $src = $(this);
+                        var $save = $src.attr('src');
+                        $src.attr('src', $src.attr('rec-src'));               
+                        $src.attr('rec-src', $save);
+                });
+                
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="select">
+                <p>Receitas da Cecilia</p>        
+                <img src='lasanha_macarrao.jpg' rec-src="receita_lasanha_macarrao.png" alt="lasanha picture">
+                <img src='macarrao_bolonhesa.jpg' rec-src="receita_macarrao_bolonhesa.png" alt="bolonhesa picture">
+                <img src='macarrao_cremoso.jpg' rec-src="receita_macarrao_cremoso.png" alt="cremoso picture">
+                <img src='macarrao_molho_branco.jpg' rec-src="receita_macarrao_molho_branco.png" alt="molho branco picture">
+            </div>
+          
+        </div>
+    
+    </body>
+</html> 

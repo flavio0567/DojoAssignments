@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 1100px;
+    margin: 60px;
+    background-color: whitesmoke;
+}

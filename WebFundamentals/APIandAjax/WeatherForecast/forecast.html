@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="forecast_style.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <title>Weather Forecast</title>
+        <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+        <script>
+            $(document).ready( function() {
+                $("button").click(function(){
+                    
+                    var city = $("input:text").val();
+                    
+                    var apikey = '5a51323da2262aac4e627de5a8d679d8';
+
+                    $.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apikey}`, function(res) {
+
+                        var html_src = "";
+                        html_src += `<h2>Temperature: </h2>`;
+                        html_src += `<p> ${res['main']['temp']} F </p>`;
+                        
+                        $('#forecast').html(html_src);
+
+                    }, 'json');
+
+                    return false;
+
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <h1> Weather Forecast</h1>
+
+        <form class="pure-form">
+
+            <input type="text" name="city" class="pure-input-rounded">
+            <button type="submit" class="pure-button">Search Weather</button>
+            
+        </form>
+
+        <div id="forecast">
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#forecast {
+    margin-left: 80px;
+}
+
+h1, h2, p {
+    padding: 10px;
+}
+
+.pure-form {
+    margin: 80px;
+}
+

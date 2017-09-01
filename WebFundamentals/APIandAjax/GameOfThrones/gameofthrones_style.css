@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 1000px;
+    background-color: rgba(2,2,2, .5);
+    margin: 10px;
+    padding: 20px;
+}
+
+#content {
+    width: 920px;
+    border: 2px solid grey;
+    background-color: white;
+    margin: 29px;
+    margin-left: 80px;
+    padding: 15px;
+}
+
+body {
+    background-image: url('gameofthrones.jpg');
+}
+
+.pic {
+    width: 200px;
+    height: 140px;
+    margin: 10px;
+    border: 2px solid grey;
+    display: inline-block;
+    vertical-align: top;
+}
+
+img {
+    width: 200px;
+    height: 140px;
+}
+
+#details {
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    border: 2px solid grey;
+    /* display: inline;  */
+    margin-left: 255px;
+}
+
+
+h1, h2, h3, p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 4% 3% 1% 10%;
+    overflow:scroll;
+    overflow-x: hidden; 
+} 
+

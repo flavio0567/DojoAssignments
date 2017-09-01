@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="gameofthrones_style.css">
+        <title>Game of Thrones</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('img').on('click', function() {
+       
+                    var house = $(this).attr("class");
+                    console.log(house);
+                    $.get(`https://www.anapioficeandfire.com/api/houses/${house}`, function(data) {
+                        console.log(data);
+                        console.log(data.titles.length);
+                        var array = [];
+                        for(var i = 0; i < data.titles.length; i++) {
+                            array.push(data.titles[i]);
+                        }
+                        console.log(array);
+                        var html_src  = '<h2>Name:</h2>'+'<p>'+data.name+'</p>';
+                            html_src += '<h2>Words:</h2>'+'<p>'+data.words+'</p>';
+                            html_src += '<h2>Titles:</h2>'+'<p>'+array+'</p>';
+
+                        $('#details').html(html_src);
+
+                    }, "json");                
+              
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <div id="content">
+
+                <div id="pictures">
+                    <div class="pic">
+                        <img class ="362" src="stark.jpg" alt="stark house">
+                    </div>
+
+                    <div class="pic">
+                        <img class ="378" src="targaryen.jpg" alt="stark house">
+                    </div>
+                        
+                    <div class="pic">
+                        <img class ="229" src="lannister.jpg" alt="stark house">
+                    </div>
+                    
+                    <div class="pic">
+                        <img class ="17" src="baratheon.png" alt="stark house">
+                    </div>
+                </div>
+
+                <div id="details">
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

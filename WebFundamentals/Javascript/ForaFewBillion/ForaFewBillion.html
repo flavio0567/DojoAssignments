@@ -11,26 +11,23 @@
             var $10k = false;
             var $million = false;
             for (var day = 2; day < 1000000; day++) {
-            // console.log("day:", day);
-            starts = starts * 2;
-            //   console.log("starts", starts);
-            reward = reward + starts;
-            //   console.log("reward", reward);
-            if (day === 30) {
-            console.log('Reward After 30 days is $', reward);
-            }
-            if (reward > 10000 && $10k === false) {
-                console.log('It takes '+day+' days to make $', reward);
-                $10k = true;
-            } else if
-                (reward > 1000000 && $million === false) {
-                console.log('It takes '+day+' days to make $', reward);
-                $million = true;
-            } else if
-                (reward == Infinity) {
-                console.log('It takes '+day+' days until the servant has infinite money!');
-                break;
-            }
+                starts = starts * 2;
+                reward = reward + starts;
+                if (day === 30) {
+                console.log('Reward After 30 days is $', reward);
+                }
+                if (reward > 10000 && $10k === false) {
+                    console.log('It takes '+day+' days to make $', reward);
+                    $10k = true;
+                } else if
+                    (reward > 1000000 && $million === false) {
+                    console.log('It takes '+day+' days to make $', reward);
+                    $million = true;
+                } else if
+                    (reward == Infinity) {
+                    console.log('It takes '+day+' days until the servant has infinite money!');
+                    break;
+                }
             }
         </script>
     </head>

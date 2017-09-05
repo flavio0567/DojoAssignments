@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Numbers Only Assignment</title>
+        <script>
+            // A function that copies an array, ONLY accepting the items that are numbers.
+
+            function numbersOnly(array) {
+                var newarray = [];
+                for (var i = 0; i < array.length; i++) {
+                  if (typeof array[i] === "number") {
+                    newarray.push(array[i]);
+                  }
+                }
+                console.log("New Array with only numbers: ", newarray)
+                return newarray;
+              }
+              var array = [1,"apple",-3,"orange",0.5];
+              console.log("Given Array: ",array);
+              numbersOnly(array)
+
+              // Second function that removes them from the given list. 
+
+              function justNumbers(list) {
+                var count = 0;
+                for (var i = 0; i < list.length; i++) {                 
+                    if (typeof list[i] != "number") {                
+                        for (var k = i + 1; k < list.length; k++) {
+                             list[k-1] = list[k];
+                        }
+                        count++;
+                        i -= 1;
+                    }
+                }    
+                while ( count > 0) {
+                  list.pop();
+                  count--;
+                }   
+                console.log("A list with only numbers: ", list)
+              }
+              var list = [1,"apple",-3,"orange",0.5];
+              console.log("Given a list: ",list);
+              justNumbers(list)
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

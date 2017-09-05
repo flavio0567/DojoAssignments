@@ -1,0 +1,43 @@
+1) I used comand SUDO do install Django : The command 'pip install Django' downloaded the Django and installed;
+
+MacBook-Air-de-FLAVIO:~ fmrocha$ sudo pip install Django
+Password:
+The directory '/Users/fmrocha/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/fmrocha/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting Django
+  Downloading Django-1.11.4-py2.py3-none-any.whl (6.9MB)
+    100% |████████████████████████████████| 7.0MB 128kB/s 
+Requirement already satisfied: pytz in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from Django)
+Installing collected packages: Django
+Successfully installed Django-1.11.4
+MacBook-Air-de-FLAVIO:~ fmrocha$ 
+
+2) pip list : It gaves me the list of installed packages.
+
+3) pip install Django : I was told that this requirement  is already  satisfied;
+
+MacBook-Air-de-FLAVIO:~ fmrocha$ pip install Django
+Requirement already satisfied: Django in /Library/Python/2.7/site-packages
+Requirement already satisfied: pytz in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from Django)
+
+4) Using pip freeze it gaves me output installed packages in requirements format.
+
+5) With this command: sudo pip uninstall Django - Django was uninstalled;
+
+  /usr/local/bin/django-admin
+  /usr/local/bin/django-admin.py
+  /usr/local/bin/django-admin.pyc
+Proceed (y/n)? y
+  Successfully uninstalled Django-1.11.4
+
+
+6) With pip show Django, it returns nothing!
+
+MacBook-Air-de-FLAVIO:~ fmrocha$ pip show Django
+MacBook-Air-de-FLAVIO:~ fmrocha$ 
+
+
+7) With pip search Flask, is returns me a search finished, found with hundred of matching the search query.
+
+
+

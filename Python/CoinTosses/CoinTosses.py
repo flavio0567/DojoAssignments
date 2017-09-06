@@ -1,5 +1,5 @@
 '''
-Coin Tosses '''
+Coin Tosses Assignment'''
 
 def cointosses():
     import random

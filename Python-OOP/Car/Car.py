@@ -7,7 +7,10 @@ class Car(object):
         self.speed = speed
         self.fuel = fuel
         self.mileage = mileage
-        if price > 10000:
+        self.calctax()
+
+    def calctax(self):
+        if self.price > 10000:
             self.tax = 0.15
         else:
             self.tax = 0.12
